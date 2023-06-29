@@ -1,0 +1,241 @@
+*{
+  margin: 0;
+  padding: 0;
+
+  #root{
+    display: flex;
+    flex-direction: column;
+  }
+
+  & header{
+    background-color:darkslateblue;
+    display: flex;
+    padding: 14px;
+    justify-content:space-between;
+    align-items: center;
+
+    > a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #ddd;
+      font-size: 1.5rem;
+    }
+
+    & nav{
+      display: flex;
+      align-items: center;
+      gap: 64px;
+
+      > a{
+        text-decoration: none;
+        font-weight: bold;
+        color: #ddd;
+      }
+    }
+  }
+
+  & main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+
+    > .container{
+      display: flex;
+      justify-content: center;
+
+      > .wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 18px;
+
+        & form{
+          padding: 18px;
+          display: flex;
+          flex-direction: column;
+          background-color: #ddd;
+          border-radius: 20px;
+  
+          & label{
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            padding: 8px;
+  
+            & input{
+              padding-inline: 20px;
+              height: 24px;
+              border-radius: 8px;
+              border: none  ;
+            }
+          }
+  
+          > div{
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+          }
+        }
+
+        > div{
+          display: flex;
+          justify-content: center;
+          gap: 24px;
+          background-color: #ddd;
+          border-radius: 20px;
+          padding: 24px;
+        }
+      }
+
+      > .wrap-product{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        > .cont-product{
+          display: flex;
+          flex-wrap: wrap;
+          gap: 18px;
+          padding: 18px;
+    
+          > .product{
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 14px;
+            background-color: #ddd;
+            border-radius: 18px;
+            box-shadow: 0px 0px 3px black;
+            height: 268px;
+      
+            > img{
+              border-radius: 24px;
+              width: 200px;
+            }
+          }
+        }
+
+        > .container-page{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 32px;
+
+          > div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:darkslateblue;
+            padding: 8px;
+            width: 20px;
+            border-radius: 100%;
+          }
+        }
+      }
+    }
+
+    > .container-filter{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      width: 100%;
+
+      > form{
+        background-color:#ddd;
+        display: flex;
+        gap: 28px;
+        padding: 14px;
+        border-radius: 14px;
+        box-shadow: 0px 0px 3px black;
+
+
+        > label{
+          font-weight: bold;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 8spx;
+
+          > input{
+            padding: 8px;
+            border: none;
+            border-radius: 8px;
+          }
+        }
+
+        & select{
+          border: none;
+          border-radius: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 120px;
+        }
+      }
+    }
+  }
+}
+
+.edit-radio{
+  display: flex;
+  flex-direction: column;
+  background-color:#ddd;
+  padding: 24px;
+  border-radius: 24px;
+  box-shadow: 0px 0px 2px black;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+
+  > form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+
+    > label{
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      > input{
+        padding: 10px;
+        border: none;
+        border-radius: 8px;
+        width: 200px;
+      }
+    }
+  }
+
+  > div{
+    display: flex;
+    gap: 32px;
+  }
+}
+
+.cont-btn{
+  display: flex;
+  gap: 6px;
+}
+
+button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+table{
+  border: 1px solid;
+  
+  & th,td{
+    padding: 10px 40px;
+    border: 1px solid;
+  }
+}

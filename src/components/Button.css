@@ -1,0 +1,18 @@
+button{
+    padding: 8px;
+    border: none;
+    border-radius: 12px;
+    width: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background-color: darkslateblue;
+    color: white;
+
+    &:hover{
+        background-color: white;
+        color: darkslateblue;
+        cursor: pointer;
+    }
+}
