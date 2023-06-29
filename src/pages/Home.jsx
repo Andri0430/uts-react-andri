@@ -186,18 +186,10 @@ export default function Home() {
               <Button
                 onClick={(e) => {
                   e.preventDefault();
-                  setProducts([newProduct, ...products]);
-                }}
-              >
-                Depan
-              </Button>
-              <Button
-                onClick={(e) => {
-                  e.preventDefault();
                   setProducts([...products, newProduct]);
                 }}
               >
-                Belakang
+                Tambah
               </Button>
             </div>
           </form>
